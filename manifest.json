@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Video Playback Speed Controller",
+  "version": "1.0",
+  "description": "Modify video playback speed using , and . keys",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
