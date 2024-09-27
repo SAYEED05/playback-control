@@ -28,13 +28,13 @@ document.addEventListener("keydown", function (event) {
 
   switch (event.key) {
     case ",":
-      video?.currentTime -= 2;
+      video.currentTime -= 2;
       break;
     case ".":
-      video?.currentTime += 2;
+      video.currentTime += 2;
       break;
     case "/":
-      video?.currentTime += 2;
+      video.currentTime += 2;
       break;
   }
 });
