@@ -2,6 +2,11 @@ function getVideoElement() {
   const url = window.location.href;
   let videoElement = null;
 
+  if (url.includes("netflix")) {
+    //to-do:remove this temporary fix
+    return;
+  }
+
   if (url.includes("sunnxt")) {
     videoElement = document.getElementById("player_html5_api");
   } else if (url.includes("netflix")) {
